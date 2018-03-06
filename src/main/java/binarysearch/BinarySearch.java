@@ -2,7 +2,7 @@ package binarysearch;
 
 /**
  * @author zhushuai
- * <p>
+ *
  * <p>二分查找是针对有序数组的一种查询方式</p>
  */
 public class BinarySearch {
