@@ -21,11 +21,11 @@ import util.Constant;
 public class BinarySearch {
 
     /**
-     * 循环实现二分查找算法arr 已排好序的数组x 需要查找的数-1 无法查到数据
+     * 循环实现二分查找算法arr 已排好序的数组x 需要查找的数
      *
      * @param arr 目标对象数组
      * @param x 目标对象值
-     * @return 目标对象所在数组下标
+     * @return 目标对象所在数组下标 -1 无法查到数据
      */
     public static int binarySearch(int[] arr, int x) {
         int low = 0;
@@ -50,7 +50,7 @@ public class BinarySearch {
      * @param data 目标对象值
      * @param beginIndex 开始下标值
      * @param endIndex 结束下标值
-     * @return 目标对象所在数组下标
+     * @return 目标对象所在数组下标 -1 无法查到数据
      */
     public static int binarySearch(int[] dataSet, int data, int beginIndex, int endIndex) {
         int midIndex = (beginIndex + endIndex) / 2;
