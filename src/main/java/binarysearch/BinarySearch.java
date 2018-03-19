@@ -1,7 +1,8 @@
 package binarysearch;
 
+import util.Constant;
+
 /**
- * @author zhushuai
  *
  * <p>
  *     二分查找也称折半查找（Binary Search），它是一种效率较高的查找方法。
@@ -13,6 +14,9 @@ package binarysearch;
  *     如果中间位置记录的关键字大于查找关键字，则进一步查找前一子表，否则进一步查找后一子表。
  *     重复以上过程，直到找到满足条件的记录，使查找成功，或直到子表不存在为止，此时查找不成功。
  * </p>
+ *
+ *
+ * @author zhushuai
  */
 public class BinarySearch {
 
@@ -36,7 +40,7 @@ public class BinarySearch {
                 low = middle + 1;
             }
         }
-        return -1;
+        return Constant.DEFAULT_INDEX;
     }
 
     /**
@@ -51,7 +55,7 @@ public class BinarySearch {
     public static int binarySearch(int[] dataSet, int data, int beginIndex, int endIndex) {
         int midIndex = (beginIndex + endIndex) / 2;
         if (data < dataSet[beginIndex] || data > dataSet[endIndex] || beginIndex > endIndex) {
-            return -1;
+            return Constant.DEFAULT_INDEX;
         }
         if (data < dataSet[midIndex]) {
             return binarySearch(dataSet, data, beginIndex, midIndex - 1);
