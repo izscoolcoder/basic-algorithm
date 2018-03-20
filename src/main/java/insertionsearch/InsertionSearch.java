@@ -20,7 +20,7 @@ public class InsertionSearch {
 
     /**
      * 插入查找
-     *查询无数据  返回下标为 <code>Constant.DEFAULT_INDEX</code>
+     * 查询无数据  返回下标为 <code>Constant.DEFAULT_INDEX</code>
      *
      * @param arr    目标数组
      * @param source 查找对象
@@ -46,6 +46,7 @@ public class InsertionSearch {
      * 插入查找
      * 递归方式查询
      * 查询无数据  返回下标为 <code>Constant.DEFAULT_INDEX</code>
+     *
      * @param arr    目标数组
      * @param source 目标对象
      * @param low    最小下标
