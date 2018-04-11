@@ -25,7 +25,7 @@ public class FibonacciSearch {
      * @return
      */
     private static int[] fibonacci(int length) {
-        if(length < Constant.FIBONACCI_DEFAULT_SIZE) {
+        if (length < Constant.FIBONACCI_DEFAULT_SIZE) {
             length = Constant.FIBONACCI_DEFAULT_SIZE;
         }
         int[] f = new int[length];
@@ -96,8 +96,8 @@ public class FibonacciSearch {
 
 
     public static void main(String[] args) {
-        int[] a = {5, 15, 19, 20, 25, 31, 38, 41, 45, 49, 52, 55, 57};
-        System.out.println(fibonacciSearch(a, 57));
+        int[] a = {5, 15, 19, 20, 25, 31, 38, 41, 45, 49, 52, 55, 57, 59, 61, 73, 75};
+        System.out.println(fibonacciSearch(a, 60));
         int[] b = {55, 57};
         System.out.println(fibonacciSearch(b, 57));
     }
