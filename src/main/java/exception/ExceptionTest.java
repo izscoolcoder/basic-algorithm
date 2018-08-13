@@ -9,6 +9,7 @@ package exception;
  * 返回的如果是对象  则返回的是对这个对象的引用值
  * 所以user 对象即使不是new 出来的 只要从新set 值就会被update
  *
+ * @date 2018/08/13
  * @author zhushuai
  */
 public class ExceptionTest {
