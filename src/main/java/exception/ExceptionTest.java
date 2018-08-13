@@ -1,5 +1,8 @@
 package exception;
 
+import java.io.FileInputStream;
+import java.util.Scanner;
+
 /**
  * 这段代码的核心就是return 返回的值
  * <p>
@@ -9,8 +12,8 @@ package exception;
  * 返回的如果是对象  则返回的是对这个对象的引用值
  * 所以user 对象即使不是new 出来的 只要从新set 值就会被update
  *
- * @date 2018/08/13
  * @author zhushuai
+ * @date 2018/08/13
  */
 public class ExceptionTest {
 
@@ -19,6 +22,8 @@ public class ExceptionTest {
         System.out.println(method());
         System.out.println(user().getUserId());
         System.out.println(nullPointer().getUserId());
+
+        resource();
     }
 
 
@@ -68,5 +73,19 @@ public class ExceptionTest {
             user.setUserId(3);
             return user;
         }
+    }
+
+    /**
+     *
+     */
+    public static void resource() {
+        try (Scanner in = new Scanner(new FileInputStream("E://a.txt"))) {
+            while (in.hasNext()) {
+                System.out.println(in.next());
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
