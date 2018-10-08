@@ -1,7 +1,6 @@
 package collection;
 
 import com.google.common.collect.Lists;
-import org.apache.logging.log4j.core.util.JsonUtils;
 import org.junit.Test;
 
 import java.util.Iterator;
