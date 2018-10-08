@@ -1,6 +1,7 @@
 package collection;
 
 import com.google.common.collect.Lists;
+import org.apache.logging.log4j.core.util.JsonUtils;
 import org.junit.Test;
 
 import java.util.Iterator;
@@ -81,6 +82,28 @@ public class IteratorTest {
 
         System.out.println(a);
 
+    }
+
+    /**
+     * 针对subList 只是视图 对于视图的增加修改 会影响到元数据列表
+     */
+    @Test
+    public void test4() {
+        List<String> origin = Lists.newArrayList("w", "s", "g", "j", "k", "l");
+        List<String> subList = origin.subList(1, 3);
+        System.out.println(origin.toString());
+        System.out.println(subList.toString());
+
+        subList.add("wo");
+        subList.add("kk");
+        System.out.println(origin.toString());
+        System.out.println(subList.toString());
+
+        //这个时候再次操作原数据列表即会报错 java.util.ConcurrentModificationException
+        origin.remove(1);
+        origin.remove(5);
+        System.out.println(origin.toString());
+        System.out.println(subList.toString());
     }
 
 }
