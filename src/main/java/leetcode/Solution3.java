@@ -1,5 +1,12 @@
 package leetcode;
 
+
+/**
+ * 马拉车算法
+ * https://www.cnblogs.com/grandyang/p/4475985.html
+ *
+ *
+ */
 public class Solution3 {
 
     public static String longestPalindrome(String s) {
