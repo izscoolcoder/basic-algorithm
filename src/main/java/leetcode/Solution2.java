@@ -1,5 +1,9 @@
 package leetcode;
 
+
+/**
+ * @author zhushuai
+ */
 public class Solution2 {
 
     public static double findMedianSortedArrays(int[] A, int[] B) {
@@ -55,7 +59,7 @@ public class Solution2 {
     }
 
     public static void main(String[] args) {
-        int[] A = new int[]{1, 2,3,4,5,6,7};
+        int[] A = new int[]{1, 2, 3, 4, 5, 6, 7};
         int[] B = new int[]{-3, -2, 8, 9, 10, 11};
 
         System.out.println(findMedianSortedArrays(A, B));

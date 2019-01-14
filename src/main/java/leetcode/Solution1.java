@@ -27,6 +27,9 @@ import java.util.Set;
  * Output: 3
  * Explanation: The answer is "wke", with the length of 3.
  * Note that the answer must be a substring, "pwke" is a subsequence and not a substring.</p>
+ *
+ *
+ * @author zhushuai
  */
 public class Solution1 {
 
